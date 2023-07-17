@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="javascript/jQuery3.7.js" defer></script>
+  <script src="javascript/javascript.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">Casino Royale</div>
+    <ul class="navbar-menu">
+      <li class="navbar-item">Dice Game</li>
+      <li class="navbar-item">Hangman</li>
+      <li class="navbar-item">Texas Holdem</li>
+      <li class="navbar-item">Black Jack</li>
+    </ul>
+  </nav>
+  <h1>Dice Game</h1>
+  <div class="game-container">
+    
+    <div class="player">
+      <h2 id="player-name">Player</h2>
+      <div class="dice-container">
+        <img class="dice" id="player-dice1" src="/images/dice1.png" alt="Dice 1">
+        <img class="dice" id="player-dice2" src="/images/dice1.png" alt="Dice 1">
+      </div>
+      <p>Score: <span id="player-score">0</span></p>
+      <p>Total Score: <span id="player-total">0</span></p>
+    </div>
+    <div class="computer">
+      <h2>Computer</h2>
+      <div class="dice-container">
+        <img class="dice" id="computer-dice1" src="/images/dice1.png" alt="Dice 1">
+        <img class="dice" id="computer-dice2" src="/images/dice1.png" alt="Dice 1">
+      </div>
+      <p>Score: <span id="computer-score">0</span></p>
+      <p>Total Score: <span id="computer-total">0</span></p>
+    </div>
+    <div class="buttons">
+      <button id="roll-btn">Roll Dice</button>
+      <button id="reset-btn">Reset Game</button>
+    </div>
+    <p id="result-message"></p>
+  </div>
+
+  
+
+  <div class="game-instructions">
+    <h3>Game Instructions</h3>
+    <ul>
+      <li>If any of the players two dice comes up as a 1 then the score for that round for the player 
+        is 0. eg: if the player rolls a 6 and 1, they get a score of 0</li>
+      <li>If the player rolls a pair of the same numbers then the players score is the total of the two 
+        dice times 2. eg: if he player rolls 5 and 5, they get a score of (5+5)*2=20</li>
+      <li>If the player rolls any other combination of dice other than the ones mentioned above 
+        then the players score is the total value of the two dice, eg: player rolls a 3 and 2, player 
+        gets a score of 3+2=5</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-contact">
+      <p class="footer-contact-bold">Contact:</p>
+      <p>(000) 000-0000</p>
+      <p>1283198273 Street</p>
+      <p>Vancouver, BC</p>
+      <p>BC V6Y-000</p></p>
+    </div>
+    <div class="footer-company">
+      <p>© 2017 Company Corp.</p>
+    </div>
+  </footer>
+</body>
+</html>

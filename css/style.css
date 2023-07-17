@@ -1,0 +1,150 @@
+body {
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: purple;
+  padding: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-item:hover {
+  color: rgb(203, 118, 203);
+  
+}
+
+/* Game Name */
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(118, 81, 179);
+}
+
+/* Game Content */
+.player, .computer {
+  margin-bottom: 20px;
+}
+
+.dice-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+}
+
+.buttons {
+  color: rgb(222, 164, 89);
+  margin-top: 20px; 
+}
+
+#result-message {
+  color: rgb(222, 164, 89);
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 15px;
+  background-color: #007bff;
+  color: rgb(222, 164, 89);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  padding: 10px 10px;
+  border: 5px solid  purple;
+  border-radius: 10px;
+}
+
+.game-container {
+  color: rgb(222, 164, 89);
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgb(118, 81, 179);
+  background-image: url("../images/dicebackground.jpg");
+  background-blend-mode: multiply;
+  background-size: cover; 
+  background-position: center;
+  border: 8px solid  purple;
+  border-radius: 10px;
+}
+
+/* Game Instructions */
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(118, 81, 179);
+}
+
+.game-instructions {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: left;
+  border: 8px solid  purple;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.game-instructions li {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* Footer bar */
+.footer {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact-bold {
+  font-weight: bold;
+}
